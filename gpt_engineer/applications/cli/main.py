@@ -90,7 +90,7 @@ def get_preprompts_path(use_custom_preprompts: bool, input_path: Path) -> Path:
 @app.command()
 def main(
     project_path: str = typer.Argument("projects/example", help="path"),
-    model: str = typer.Argument("gpt-4-1106-preview", help="model id string"),
+    model: str = typer.Argument("gpt-3.5-turbo", help="model id string"),
     temperature: float = 0.1,
     improve_mode: bool = typer.Option(
         False,
